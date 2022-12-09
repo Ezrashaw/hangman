@@ -54,6 +54,12 @@ impl<'a> Hangman<'a> {
     }
 
     fn guess_prompt(&self) {
+        self.print_state();
+
+        libc_print!("\n\nPlease guess a letter...");
+    }
+
+    pub fn print_state(&self) {
         libc_print!(
             "\x1Bc--- HANGMAN ---\nYou have {} guesses remaining.\nLetters used: ",
             self.guesses_remaining
@@ -73,7 +79,6 @@ impl<'a> Hangman<'a> {
                 libc_print!("_");
             }
         }
-        libc_print!("\n\nPlease guess a letter...");
     }
 
     fn is_letter_used(&self, letter: u8) -> bool {

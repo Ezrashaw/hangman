@@ -29,10 +29,12 @@ pub fn main() {
         match hangman.state() {
             hangman::HangmanState::Playing => (),
             hangman::HangmanState::Won => {
+                hangman.print_state();
                 libc_println!("\nYou won!");
                 break;
             }
             hangman::HangmanState::Lost => {
+                hangman.print_state();
                 libc_println!("\nGame over! The word was {}.", word);
                 break;
             }
