@@ -1,4 +1,4 @@
-use libc_print::*;
+use libc_print::{libc_print, libc_println};
 
 pub struct Hangman<'a> {
     word: &'a str,
@@ -92,7 +92,7 @@ impl<'a> Hangman<'a> {
         let bit_index = letter - b'a';
         let used_shifted = 0b1u32 << bit_index;
 
-        self.letters_used |= used_shifted
+        self.letters_used |= used_shifted;
     }
 }
 

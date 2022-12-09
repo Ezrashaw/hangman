@@ -1,3 +1,3 @@
 fn main() {
-    hangman::main()
+    hangman::main();
 }

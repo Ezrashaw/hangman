@@ -17,8 +17,7 @@ pub fn main() {
 
     let word = WORDS
         .split('\n')
-        .skip(rng.gen_range(0..count_lines(WORDS)))
-        .next()
+        .nth(rng.gen_range(0..count_lines(WORDS)))
         .unwrap();
 
     let mut hangman = Hangman::new(word, 12);
