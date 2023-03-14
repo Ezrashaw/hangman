@@ -1,6 +1,6 @@
 # hangman
 My implementation of the classic Hangman game in Rust.
-I took some inspiration from Ryan Gordon: [Hangman](https://github.com/ryangordon11235/Hangman), however my implementation invloves more advanced concepts in the Rust programming language.
+I took some inspiration from Ryan Gordon: [Hangman](https://github.com/ryangordon11235/Hangman), however my implementation involves more advanced concepts in the Rust programming language.
 
 Differences between this code and [Hangman](https://github.com/ryangordon11235/Hangman):
 - All of my code is #![no_std] and instead links just with `libc`.

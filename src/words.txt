@@ -152,10 +152,6 @@ banana
 stencil
 able
 gram
-
-    pub fn test() {
-        Vec
-    }
 quill
 view
 shyly
